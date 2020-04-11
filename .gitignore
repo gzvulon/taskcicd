@@ -1,0 +1,8 @@
+*.pyc
+*.tmp
+out
+.vscode
+.idea
+*.egg-info
+.pytest_chache
+__pychache__

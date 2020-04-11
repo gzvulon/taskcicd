@@ -31,7 +31,7 @@ There are a couple ways of doing it:
 - `python -m venv` + manual python verion install
 - `pyenv` (manual install) + `python -m venv`
 - `pyenv` (manual install) + `Pipenv`
-- poetry + pyenv
+- poetry + pyenv https://github.com/python-poetry/poetry
 - conda https://docs.conda.io/en/latest/license.html
 
 Well most painfull part here is not the venv management,

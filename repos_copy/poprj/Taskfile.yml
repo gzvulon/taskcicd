@@ -1,0 +1,37 @@
+# https://taskfile.dev
+
+version: '2'
+
+vars:
+  GREETING: Poetry Sample
+
+tasks:
+  default:
+    cmds:
+      - echo "{{.GREETING}}"
+      - task -l
+    silent: true
+  
+  venv-shell:
+    desc: _
+    cmds:
+      - echo poetry shell
+    silent: yes
+  
+  venv-install:
+    desc: _
+    cmds:
+      - poetry install
+  
+  test:
+    desc: _
+    cmds:
+      - poetry run pytest tests -s # test-raw # doesnt work in win
+
+
+  test-raw:
+    desc: _
+    cmds:
+      - pytest tests -s
+
+
