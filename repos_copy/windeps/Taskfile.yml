@@ -1,0 +1,29 @@
+# https://taskfile.dev
+
+version: '2'
+
+vars:
+  GREETING: Hello, World!
+
+tasks:
+  default:
+    cmds:
+      - echo "{{.GREETING}}"
+    silent: true
+  
+  show-install-chocko:
+    desc: see. https://chocolatey.org/install
+    cmds:
+      - echo "Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))"
+    silent: yes
+
+  install-docker-machine:
+    desc: _
+    cmds:
+      - choco install docker-machine
+
+  download-virtualbox:
+    desc: _
+    cmds:
+      - echo https://www.virtualbox.org/wiki/Downloads
+

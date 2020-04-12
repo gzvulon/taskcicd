@@ -50,6 +50,16 @@ on mac and win and lin.
 
 My Personal choice is wide python management by conda,
 and package management with poetry.
+- [Install miniconda](https://docs.conda.io/en/latest/miniconda.html)
+- [Install poetry](https://python-poetry.org/docs/#installation)
+    - `curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python`
+    - `(Invoke-WebRequest -Uri https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py -UseBasicParsing).Content | python`
+
+### Docker 
+
+For more environment independent parts its very handy to use to use docker
+
+> On windows download from https://hub.docker.com/editions/community/docker-ce-desktop-windows/
 
 
 
